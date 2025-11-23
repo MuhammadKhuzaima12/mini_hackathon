@@ -187,7 +187,7 @@ function on_signin(event) {
           return;
         } else {
           sweet_alert( "Login successful!","success")
-          setTimeout(window.location.pathname = "../index.html",1500)
+          setTimeout(window.location.pathname = "../mini_hackathon/index.html",1500)
           return;
         }
       }
