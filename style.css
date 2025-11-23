@@ -1,0 +1,249 @@
+/* 
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center; */
+
+:root {
+    --primary: #1A154E;
+    --secondary: #FFCA3E;
+    --prim_acc: #c3c2ff;
+    --sec_acc: #fff0bf;
+    --shadow-color: #020c1b;
+}
+
+/* Abril Fatface with Sparkling Effects */
+.abril-fatface-sparkle {
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--primary);
+    /* Vibrant yellow */
+    text-shadow:
+        0 0 10px #1A154Eb3,
+        /* Inner glow */
+        0 0 20px #1A154E66,
+        /* Outer glow */
+        2px 2px 4px #fff0bf4d;
+    /* Navy blue depth */
+    letter-spacing: 1px;
+    background: linear-gradient(90deg, #fff0bf 30%, transparent 70%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+}
+
+/* Animation for twinkling effect */
+@keyframes sparkle {
+
+    0%,
+    100% {
+        opacity: 0.8;
+    }
+
+    50% {
+        opacity: 1;
+        text-shadow: 0 0 15px #1A154Eb3, 0 0 30px #1A154Eb9;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    /* border: 5px solid black; */
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: "Tektur", serif;
+    color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--prim_acc);
+}
+
+header {
+    width: 100vw;
+    background-color: var(--sec_acc);
+    box-shadow: 0 5px 5px var(--secondary);
+}
+
+.header_body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 600px;
+    font-weight: 700;
+}
+
+.logo_name {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    width: 30%;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar li {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    /* border: 2px solid black; */
+}
+
+.login_btn {
+    height: 30px;
+    background-color: var(--secondary);
+    border-radius: 10px;
+    box-shadow: 0 2px 2px var(--shadow-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_btn:hover {
+    color: var(--secondary);
+    background-color: var(--primary)
+}
+
+
+.hero_sec {
+    border: 3px solid var(--secondary);
+    height: 70vh;
+    padding: 2% 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    background-color: var(--sec_acc);
+    box-shadow: 0 5px 5px var(--secondary);
+}
+
+.card1 {
+    height: 95% !important;
+    border: 3px solid var(--secondary) !important;
+    overflow-y: auto;
+    border-radius: 10px;
+}
+
+.card1_body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    color: var(--primary);
+    background-color: var(--prim_acc);
+    padding: 0 30px;
+}
+
+.card1_heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero_sec video {
+    height: 90%;
+    border: 3px solid var(--secondary);
+    border-radius: 10px;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+/* Mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+    .cp {
+        width: 90%;
+        height: auto;
+    }
+
+    .cp_body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        min-height: auto;
+    }
+
+    .post_text {
+        height: auto;
+        font-size: 1rem;
+        padding: 8px;
+    }
+
+    .hero_sec {
+        flex-direction: column;
+        padding: 5%;
+        height: auto;
+        gap: 20px;
+    }
+
+    .hero_sec video {
+        width: 100%;
+        height: auto;
+    }
+
+    textarea {
+        height: auto !important;
+        font-size: 1rem;
+    }
+
+    .bg_img_list img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .post {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .post_btns {
+        height: 8vh;
+        margin-bottom: -8px;
+    }
+
+    .post_btns button {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
+
+/* Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .cp {
+        width: 80%;
+        height: auto;
+    }
+
+    .bg_img_list img {
+        width: 65px;
+        height: 65px;
+    }
+}

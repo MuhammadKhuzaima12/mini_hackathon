@@ -1,0 +1,110 @@
+body {
+    overflow-x: hidden;
+}
+
+.cp {
+    margin: 20px;
+    padding: 5px;
+    width: 60%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.cp_head {
+    height: 10%;
+    width: 100%;
+    border: 2px solid var(--secondary);
+    border-radius: 10px;
+    background-color: var(--sec_acc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cp_body {
+    height: 80vh;
+    display: flex;
+    gap: 10px;
+}
+
+.card {
+    min-height: 100%;
+    background-color: var(--sec_acc);
+    width: 50%;
+    padding: 0;
+    border: 2px solid var(--secondary);
+}
+
+.card2_title {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+
+.card2_body {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 20px;
+}
+
+#username_input {
+    background-color: var(--prim_acc);
+    border: 2px solid var(--primary);
+    border-radius: 10px;
+    min-height: 5.8vh;
+    max-width: 100%;
+    margin-bottom: 5px;
+    height: 45px;
+    width: 250px;
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+textarea {
+    background-color: var(--prim_acc) !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    overflow-y: auto;
+    border: 2px solid var(--primary);
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px;
+}
+
+.post_button {
+    background-color: var(--prim_acc);
+    border-color: var(--primary);
+    box-shadow: 2px 5px 5px rgb(85, 88, 88);
+    height: 6vh;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.card3_body {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.bg_img_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px 10px;
+}
+
+.bg_img_list img:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 0px 5px #4d4c4b;
+}

@@ -1,0 +1,134 @@
+body {
+    /* overflow-x: hidden; */
+    display: flex;
+}
+
+.header_body {
+    gap: 100px;
+}
+
+.logo_name {
+    width: 20%;
+}
+
+.search-container {
+    position: relative;
+    width: 40%;
+}
+
+#search_bar {
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+#search_bar:focus {
+    outline: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.search-btn {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #6a11cb;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#post_sec {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 80%;
+    padding: 2% 5%;
+}
+
+.post {
+    margin-top: 10px;
+    width: 70%;
+    max-width: 60vh;
+    border: 2px solid var(--secondary);
+    border-radius: 10px;
+}
+
+.post_title {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+}
+
+.post_text {
+    height: 40vh;
+    padding: 10px;
+    font-size: larger;
+    border: 2px solid var(--primary);
+    border-radius: 5px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.com_card {
+    padding: 5px 0;
+    width: 100%;
+    border: 2px solid var(--primary);
+}
+
+.form_control {
+    height: 15vh;
+}
+
+.post_btns {
+    display: flex;
+    width: 100%;
+    height: 6vh;
+}
+
+.post_btns button,
+.del_btn {
+    width: 100%;
+    border: none;
+    background-color: var(--prim_acc);
+    color: var(--primary);
+}
+
+button:hover,
+.del_btn:hover {
+    background-color: var(--primary) !important;
+    color: var(--prim_acc) !important;
+}
+
+.like_count {
+    margin: 5px;
+}
+
+.filter_list {
+    margin-top: 0 !important;
+    width: 100vw;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    background-color: var(--secondary);
+}
+
+.filter_btn {
+    border: none;
+    border-radius: 25px;
+    width: 120px;
+    height: 30px;
+}
